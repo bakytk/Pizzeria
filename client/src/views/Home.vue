@@ -1,7 +1,7 @@
 <template>
     <span>
         <hero></hero>
-		<offer></offer>
+		    <offer></offer>
     </span>
 </template>
 
@@ -16,14 +16,14 @@ export default {
         hero,
 		offer,
     },
-	
+
 	created () {
 
 		this.$store.dispatch('loadData');
   	},
-	
+
 	mounted () {
-	
+
 		this.$store.dispatch('setDevice', this.$mq);
   	}
 };
